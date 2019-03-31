@@ -1,2 +1,2 @@
 # WinsatWebsite2
-New Website code for winsat.ca
+New Website design for winsat.ca

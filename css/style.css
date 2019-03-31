@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+/* Reset style */
+body {
+	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+	color: #505962;
+	/*background-color: #505962;  To debug nav */
+}
+
+/*-- Nav Scrolling Offset --*/
+.offset:before {
+	height: 4rem;
+	margin-top: -4rem;
+	content: "";
+	display: block;
+}
+
+/*-- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+	padding: 1rem;
+}
+
+[class*="col-12"] {
+	margin-bottom: 1rem;
+}
+
+/*============ NAVIGATION ============*/
+.navbar {
+	padding: .7rem 1rem;
+	text-transform: uppercase;
+	font-size: .9rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	transition: background-color .5s ease 0s;
+}
+
+.navbar-brand img {
+	height: 2rem;
+}
+
+.svg-inline--fa.fa-w-14 {
+	color: white;
+	font-size: 1.6rem;
+}
+
+.navbar-nav li {
+	padding-right: .8rem;
+}
+
+.navbar-nav .nav-link {
+	color: white;
+	padding-top: .8rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+	color: #2980B9;
+}
+
+/* Hidden for now, apply with JS later */
+.navbar.solid {
+	background: rgba(0, 0, 0, 0.7)!important;
+	transition: background-color 1s ease 0s;
+}
+
+/* Go from transparent to solid JS */
+
+
+/*============ LANDING PAGE ============*/
+.home-inner {
+	background-image: url('../img/earth.jpg');
+	filter: brightness(80%);
+}
+
+.caption {
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 38%;
+	z-index: 
+}
+
+.caption h1 {
+	color: white;
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: 400; /* Google font variants are 400 (normal) and 700 (bold) */
+	letter-spacing: .3rem;
+	text-shadow: .1rem .1rem .8rem black;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	border-bottom: 0px;
+}
+
+.caption h3 {
+	color: white;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight: 700; /* Google font variant that is bold */
+	text-shadow: .1rem .1rem .8rem black;
+	padding-bottom: 1rem;
+}
+
+.caption img {
+	width: 35%;
+	height: 35%;
+	padding-top: 0px;
+	margin-top: 0px;
+	border-top: 0px;
+}
+
+.btn-lg {
+	border-width: medium;
+	border-radius: 1;
+	padding: .8rem 1.5rem;
+	font-size: 1.1rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-shadow: .1rem .1rem .8rem black;
+	box-shadow: .1rem .1rem .8rem black;
+	display: inline-block!important;
+}
+
+/*============ TEAM DIVISIONS SECTION ============*/
+.narrow {
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+
+.btn-sm {
+	border-width: medium;
+	border-radius: 0;
+	padding: .5rem 1.1rem; /* The first rem is top/bottom, the second is left/right */
+	font-size: .9rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 1rem;	
+}
+
+.btn-turquoise {
+	border-color: #2471A3;
+	background-color: #2471A3;
+	color: white;
+}
+
+.btn-turquoise:hover,
+.btn-turquoise:focus {
+	border-color: #154360;
+	background-color: #154360;
+	color: white;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+	border-radius: 0;
+	padding-top: 1rem 0 3rem; /* Top L/R Bot */
+}
+
+h3.heading {
+	font-size: 1.9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 1.9rem; /* ~30 pixels */
+}
+
+.heading-underline {
+	width: 6rem;
+	height: .2rem;
+	background-color: #2471A3;
+	margin: 0 auto 2rem;
+}
+
+.jumbotron h3 {
+	text-align: center;
+}
+
+.jumbotron p[class*="icon"] {
+	text-align: center;
+}
+
+.jumbotron p {
+	text-align: center;
+}
+
+.feature .fa-layers {
+	color: #2471A3;
+	height: 6rem;
+	margin: 0 auto;
+}
+
+.feature h3 {
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	padding-bottom: .4rem;
+}
+
+.feature p {
+	font-size: 1.1rem;
+}
+
+
+/*============ FIXED BACKGROUND IMAGE DARK ============*/
+#fixed {
+	background-image: url('../img/cosmos.jpg');
+	z-index: -1;
+}
+
+#background {
+	background-image: url('../img/cosmos.jpg');
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.dark {
+	background-color: rgba(0, 0, 0, 0.75);
+	padding: 7rem 2rem;
+	text-align: center;
+	z-index: 1000!important;
+}
+
+.dark h3, .dark p {
+	color: #e9ecef;
+}
+
+
+/*============ APPLY ============*/
+.row.padding {
+	padding: 2rem 0rem 1rem;
+}
+
+img.example-image {
+	max-width: 100%;
+	object-fit: cover;
+	width:25.5rem;
+  	height:25.5rem;
+}
+
+.row.no-padding [class*=col-] {
+	padding: 0rem;
+}
+
+.portfolio-item img:hover {
+	transform: scale(1.3);
+	cursor: zoom-in;
+}
+
+.portfolio-item img {
+	transition: transform .4s ease;
+}
+
+.portfolio-item {
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS REFERENCE:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
